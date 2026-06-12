@@ -1,18 +1,16 @@
 [build-system]
-requires = ["setuptools>=61"]
-build-backend = "setuptools.build_meta"
+requires = ["uv_build >= 0.11.7, <0.12.0"]
+build-backend = "uv_build"
 
 [project]
-name = "example-package-roryyeung"
-version = "0.1.0"
-description = "Example package scaffold for r2-ert."
+name = "r2-ert"
+version = "0.0.1"
+description = "A python wrapper around the R2 series of codes for the modelling of Electrical Resistivity Tomography in Geophysics."
 readme = "README.md"
 requires-python = ">=3.9"
 license = "GPL-3.0-or-later"
-authors = [{ name = "roryyeung" }]
+authors = [{ name = "Rory Yeung", email="r.yeung1@lancaster.ac.uk" }]
 
-[tool.setuptools]
-package-dir = { "" = "src" }
-
-[tool.setuptools.packages.find]
-where = ["src"]
+[project.urls]
+Homepage = "https://github.com/roryyeung/r2-ert"
+Issues = "https://github.com/roryyeung/r2-ert/issues"
