@@ -1,11 +1,15 @@
 import unittest
 
-from example_package_roryyeung import greet
+import r2_ert
+import r2_ert.helper_functions
+import r2_ert.Structured_Foward_Survey
 
 
-class TestExample(unittest.TestCase):
-    def test_greet(self) -> None:
-        self.assertEqual(greet("World"), "Hello, World!")
+class TestPackaging(unittest.TestCase):
+    def test_package_imports(self) -> None:
+        self.assertIsNotNone(r2_ert)
+        self.assertIsNotNone(r2_ert.helper_functions)
+        self.assertIsNotNone(r2_ert.Structured_Foward_Survey)
 
 
 if __name__ == "__main__":
